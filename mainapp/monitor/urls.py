@@ -2,5 +2,6 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path('', Prediction.as_view(), name = 'prediction'),
+    ## edit the prefix /pred to indicate another API
+    path('pred', Prediction.as_view(), name = 'prediction'),
 ]
